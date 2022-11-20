@@ -1,4 +1,4 @@
-from kernel.config import *
+from core.config import *
 from dbapi.available_dbnames import AvailableDBs
 from peewee import *
 from dbapi.exceptions.wrong_dbname import WrongDBNameException

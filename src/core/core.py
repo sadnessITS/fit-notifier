@@ -1,6 +1,6 @@
 import logging
 from aiogram import Dispatcher, Bot
-from kernel.config import API_TOKEN
+from core.config import API_TOKEN
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 logging.basicConfig(level=logging.INFO)

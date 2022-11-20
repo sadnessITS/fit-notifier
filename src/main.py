@@ -1,4 +1,4 @@
-from kernel.kernel import dispatcher
+from core.core import dispatcher
 from aiogram import executor
 
 if __name__ == "__main__":
