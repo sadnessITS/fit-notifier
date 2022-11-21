@@ -5,8 +5,7 @@ from aiogram_dialog.widgets.text import Const
 from core.core import dispatcher
 
 
-registrySender = DialogRegistry(dispatcher)
-registryReceiver = DialogRegistry(dispatcher)
+registry = DialogRegistry(dispatcher)
 
 
 class KeyboardStates(StatesGroup):
@@ -28,7 +27,5 @@ student_window = Window(
 )
 
 
-dialog_teacher = Dialog(teacher_window)
 dialog_student = Dialog(student_window)
-registrySender.register(dialog_teacher)
-registryReceiver.register(dialog_student)
+registry.register(dialog_student)
