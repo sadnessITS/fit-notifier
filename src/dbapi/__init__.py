@@ -31,5 +31,12 @@ class Student(Model):
         database = db
 
 
+class Admin(Model):
+    admin_id = IntegerField(primary_key=True)
+    name = TextField(null=False)
+    surname = TextField(null=False)
+    telegram_id = BigIntegerField(null=False)
+
+
 db.connect()
-db.create_tables([Student])
+db.create_tables([Student, Admin])
